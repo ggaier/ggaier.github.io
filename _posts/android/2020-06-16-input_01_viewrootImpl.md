@@ -1,6 +1,6 @@
 ---
 title: ViewRootImpl 和 输入的关系
-tags: Android Handler Looper Advanced SourceCode View Input
+tags: Android Looper Advanced SourceDive View InputEvent
 published: true
 layout: article
 ---

@@ -1,6 +1,6 @@
 ---
 title: 消息机制到底是怎么实现的
-tags: Android Handler Looper Advanced SourceCode
+tags: Android Looper Advanced SourceDive
 published: true
 layout: article
 ---
