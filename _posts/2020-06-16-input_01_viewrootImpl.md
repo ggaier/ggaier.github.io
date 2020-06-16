@@ -5,7 +5,7 @@ published: true
 layout: article
 ---
 
-[Android 消息机制的实现](./2020-06-14-android-handler-under-the-hood.md)中提到输入事件是如何不阻塞主线程的。那就把这个问题先细分一下，再带着问题去学习：
+[Android 消息机制的实现]({% post_url 2020-06-14-android-handler-under-the-hood %})中提到输入事件是如何不阻塞主线程的。那就把这个问题先细分一下，再带着问题去学习：
 
 1. 手指触摸在一个Activity上, 是由哪一部分开始接受输入事件的呢?
 2. 输入事件产生后, 又是如何到了主线程的呢?
