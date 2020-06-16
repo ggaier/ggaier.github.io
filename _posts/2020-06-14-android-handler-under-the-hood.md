@@ -3,7 +3,6 @@ title: 消息机制到底是怎么实现的
 tags: Android Handler Looper Advanced SourceCode
 published: true
 layout: article
-mathjax: true
 ---
 
 Android 消息机制中， 主要涉及Handler，MessageQueue，Looper，Thread。它们到底是怎么工作的呢？原理是什么呢？

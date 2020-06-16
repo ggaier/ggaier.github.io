@@ -3,7 +3,6 @@ title: ViewRootImpl 和 输入的关系
 tags: Android Handler Looper Advanced SourceCode View Input
 published: true
 layout: article
-mathjax: true
 ---
 
 [Android 消息机制的实现](./2020-06-14-android-handler-under-the-hood.md)中提到输入事件是如何不阻塞主线程的。那就把这个问题先细分一下，再带着问题去学习：
@@ -14,6 +13,8 @@ mathjax: true
 4. 输入事件产生后, 又是如何一步步的分发的呢?
 
 其中的第`2`条就涉及到，如何才能在主线程等待`epoll_wait`方法的时候，唤醒主线程，接受输入事件。但是饭要一口一口吃，先从第一个问题了解.
+
+<!--more-->
 
 ## Activity中的输入事件最开始的入口是哪里
 
