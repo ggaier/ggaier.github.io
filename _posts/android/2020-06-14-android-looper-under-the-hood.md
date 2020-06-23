@@ -22,7 +22,7 @@ Android 消息机制中， 主要涉及Handler，MessageQueue，Looper，Thread�
 
 #### Looper.java的初始化和循环
 
-直接从上边的第二部开始, 通过`Looper.myLooper().prepare()`方法, 创建一个消息队列.
+直接从上边的第二步开始, 通过`Looper.myLooper().prepare()`方法, 创建一个消息队列.
 
 ```java
 private static void prepare(boolean quitAllowed) {
