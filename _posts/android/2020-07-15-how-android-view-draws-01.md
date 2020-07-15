@@ -1,5 +1,5 @@
 ---
-title: Android View 是如何绘制的-1
+title: Android View 是如何绘制的之一
 tags: Android View Draw Graphics
 published: true
 layout: article
