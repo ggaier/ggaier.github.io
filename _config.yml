@@ -20,7 +20,7 @@ text_skin: ocean # "default" (default), "dark", "forest", "ocean", "chocolate", 
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : https://ggaier.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : "" # does not include hostname
-title   : 文博的目前可以公开的笔记
+title   : 学而时习之，我挺健忘。
 description: 是秃子你总会发光的，不是秃子你总会掉光的，所以你总会发光的。
 # > # this means to ignore newlines until "Language & timezone"
 theme: jekyll-text-theme
@@ -37,7 +37,7 @@ timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : 蒋文博
+  name      : ggaier
   url       :
   avatar    : # path or url of avatar image (square)
   bio       :
