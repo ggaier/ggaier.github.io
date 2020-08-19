@@ -44,7 +44,7 @@ Unicode是一个字符表，它兼容了已有的编码标准。这些已有的�
 那么surrogates又是如何实现的呢？如果把一个在`U+10000`到`U+10FFFF`之间的Unicode转化成两个码位表示的Surrogates呢？
 
 ##### UTF-16
-我们举例说明。以"💣"这个炸弹字符为例，在Java中，`"💣".length()`的结果是2，也就是说它用了两个Char来表示这个符号(Grapheme)。[查阅Unicode表](https://emojipedia.org/bomb/)，知道它的Unicode是U+1F4A3，所以它在Java中就要用到Surrogate Paier表示。那怎么表示呢？最终表示成什么呢？
+我们举例说明。以"💣"这个炸弹Emoji为例，在Java中，`"💣".length()`的结果是2，也就是说它用了两个Char来表示这个符号(Grapheme)。[查阅Unicode表](https://emojipedia.org/bomb/)，知道它的Unicode是U+1F4A3，所以它在Java中就要用到Surrogate Paier表示。那怎么表示呢？最终表示成什么呢？
 
 这个转化的过程就是UTF-16的编码方式了。遵循以下几个步骤：
 1. Code Point 减去0x010000，这一步去掉了高位，只保留了较低的16位。
