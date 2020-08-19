@@ -77,7 +77,7 @@ public String(int[] codePoints, int offset, int count) {
 补充，除了Bomb之外，还有一些更特殊的emoji，比如"🤦‍♀️"这个Emoji。它的Code Points是"\uD83E\uDD26\u200D\u2640\uFE0F"。这就明显超出了`U+10FFFF`的表示范围了，这是怎么回事呢？
 
 ##### Emoji的组合
-这就对应了[前面说的](#专有名词解释terminology)，有些Grapheme和Code Point 不是一一对应的，这种情况下，是多个Code Point（4个）对应渲染成了一个Grapheme，也就是最终的Emoji。换成更属于的解释就是Emoji中的组合。它是指的用零宽连字（ZWJ--Zero Width Joiner）`U+200D`插入到两个Emoji中间，实现单一显示的，独特的Emoji字符。比如上边说的"🤦‍♀️"，它的Code Points是`U+1F926‍ U+200D U+2640️ U+FE0F`。这种特殊的实现，如果系统不能识别ZWJ的话，就会忽略。
+这就对应了[前面说的](#专有名词解释terminology)，有些Grapheme和Code Point 不是一一对应的，这种情况下，是多个Code Point（4个）对应渲染成了一个Grapheme，也就是最终的Emoji。换成更属于的解释就是Emoji中的组合。它是指的用零宽连字（ZWJ--Zero Width Joiner）`U+200D`控制符插入到两个Emoji中间，实现单一显示的，独特的Emoji字符。比如上边说的"🤦‍♀️"，它的Code Points是`U+1F926‍ U+200D U+2640️ U+FE0F`。这种特殊的实现，如果系统不能识别ZWJ的话，就会忽略。
 
 ## 参考文档
 
