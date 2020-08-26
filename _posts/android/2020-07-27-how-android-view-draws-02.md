@@ -82,7 +82,12 @@ RenderPipelineType Properties::getRenderPipelineType() {
 }
 ```
 
-可以从配置中取出`PROPERTY_RENDERER`的值，来决定使用何种渲染管道类型。默认是`skiagl`。 那我们就先从默认的看起。
+可以从配置中取出`PROPERTY_RENDERER`的值，来决定使用何种渲染管道类型。默认是`skiagl`。 **那我就先从skiagl看起**。它的类继承关系是：
+
+```cpp
+class SkiaRecordingCanvas : public SkiaCanvas{}
+class SkiaCanvas : public Canvas{}
+```
 
 ### 2. draw(canvas)
 所有的绘图操作就都是在`DisplayListCanvas`上，而从[上边的代码](#create_canvas)可以知道，底层创建的canvas是`SkiaRecordingCanvas`。
